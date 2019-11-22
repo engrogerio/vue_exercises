@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id='app'>
+			<h1 v-once>{{ id }} - {{ name }}</h1>
+			<h2>{{ get_hobbies() }}</h2>
+			<h2>Web site: <a v-bind:href="website">link</a></h2>
+			<input type="text" name="newhobby">
+			<hr>
+			<p v-html="html"></p>
+			<input type="submit" value="Add new hobby" v-on:click="add_hobby">
+		</div>
+		<div>
+		<h1 v-on:mousemove="updateCoord"> Coordinates {{ x }}, {{ y }} </h1>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

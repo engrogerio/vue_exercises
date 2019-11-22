@@ -1,0 +1,14 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+
+<div id="app">
+    <button v-on:click="counter++">ADDS</button>
+    <button v-on:click="counter--">SUBTRACTS</button>
+    <button v-on:click="anotherCounter++">ANOTHER ADDS</button>
+
+    <p>Counter {{ counter }} | {{ anotherCounter }}</p>
+    <p>Result {{ evaluate() }} | {{ output }}</p>
+
+</div>
+
+<script src="l25.js"></script>

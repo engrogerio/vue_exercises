@@ -1,0 +1,25 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<div id="exercise">
+    <button v-on:click="showAlert">Show Alert</button>
+
+    <div>
+        <input type="text" v-on:keyup="keypressed">
+    </div>   
+
+
+    <div>
+        <input type="text" v-on:keyup.enter="key=$event.target.value">
+        <h1>{{ key }}</h1>
+    </div>   
+    <div>
+        <input type="text" v-model="name">
+        <p>Hello, {{ name }}! How are you today?</p>
+    </div>
+    <div>
+        <button v-on:click="check">checa se é numero</button>
+        {{ is_number }}
+    </div>
+
+
+</div>
+<script src="ex2.js"></script>
